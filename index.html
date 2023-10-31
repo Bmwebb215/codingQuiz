@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div id="start-container">
+        <h1>JavaScript Quiz</h1>
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz" style="display: none;">
+        <div id="question"></div>
+        <div id="options"></div>
+        <div id="feedback-container"></div>
+        <div id="time">70</div>
+    </div>
+
+    <div id="result-container" style="display: none;">
+        <div id="feedback-container"></div>
+        <div id="username-container" style="display: none;">
+            <input type="text" id="username" placeholder="Enter your username">
+            <button onclick="submitScore()">Submit</button>
+        </div>
+        <div id="try-again-container" style="display: none;">
+            <button onclick="restartQuiz()">Try Again</button>
+        </div>
+    </div>
+
+    <div id="scoreboard" style="display: none;">
+        <h2>Scoreboard</h2>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
